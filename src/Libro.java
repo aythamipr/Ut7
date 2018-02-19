@@ -53,7 +53,7 @@ public class Libro {
 		this.numLibPrest = numLibPrest;
 	}
 	
-	public boolean prestamo(String libro) {
+	public boolean prestamo() {
 			if (numLibPrest < numLibros) {
 				//numLibPrest =+ numLibPrest;
 				numLibPrest++;
@@ -63,7 +63,7 @@ public class Libro {
 				return false;
 	}
 	
-	public boolean devolucion(String libro) {
+	public boolean devolucion() {
 		if (numLibPrest == 0) {
 			return false;
 		}
